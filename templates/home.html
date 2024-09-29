@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Omigra Enterprise Recruitment</title>
+    <link rel="stylesheet" href="../static/styles/profile.css">  
+    <link rel="stylesheet" href="../static/styles/home.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="user-info">
+                <img src="../static/images/default-profile.jpg" alt="profilcpic">
+             </div> 
+            
+            <div class="heading">
+                <h1>Omigra Enterprise Recruitment</h1>
+            </div>
+
+
+            <!-- Dropdown Menu -->
+            <div class="dropdown-container">
+                <button class="dropdown-btn">Menu</button>
+                <div class="dropdown-content">
+                    <a href="profile.html">Profile</a>
+                    <a href="home.html">Home</a>
+                    <a href="about.html">About Us</a>
+                    <a href="contact.html">Contact Us</a>
+                    <a href="#logout">Logout</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <!-- Add Job Button for Admin -->
+        <div class="add-job-container">
+            <a href="/add-job" class="add-job-btn">Add Job</a>
+        </div>
+        
+        <section id="jobs">
+            <div class="job">
+                <h2>Cleaner</h2>
+                <p>Job Description: Responsible for maintaining cleanliness in the designated areas.</p>
+                <button onclick="applyForJob('Cleaner')">Apply</button>
+            </div>
+            <div class="job">
+                <h2>Cook</h2>
+                <p>Job Description: Prepare meals as per the menu and maintain kitchen hygiene.</p>
+                <button onclick="applyForJob('Cook')">Apply</button>
+            </div>
+            <div class="job">
+                <h2>Housekeeping</h2>
+                <p>Job Description: Maintain cleanliness and order in guest rooms and common areas.</p>
+                <button onclick="applyForJob('Housekeeping')">Apply</button>
+            </div>
+            <div class="job">
+                <h2>Driver</h2>
+                <p>Job Description: Responsible for transporting clients safely to their destinations.</p>
+                <button onclick="applyForJob('Driver')">Apply</button>
+            </div>
+            <div class="job">
+                <h2>Shop Attendant</h2>
+                <p>Job Description: Assist customers and manage sales transactions in the store.</p>
+                <button onclick="applyForJob('Shop Attendant')">Apply</button>
+            </div>
+            <div class="job">
+                <h2>Security</h2>
+                <p>Job Description: Ensure the safety and security of the premises and personnel.</p>
+                <button onclick="applyForJob('Security')">Apply</button>
+            </div>
+        </section>
+        
+    </main>
+    <footer>
+        <p>Contact us: +97450075368 or 0741715502 | Email: absalomominde1@gmail.com</p>
+    </footer>
+    <script src="../static/scripts/home.js"></script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings - Omigra Recruitment Enterprise</title>
+    <link rel="stylesheet" href="../static/styles/profile.css"> 
+    <link rel="stylesheet" href="../static/styles/home.css">
+</head>
+<body>
+    <header>
+        <div class="user-info">
+            <img src="../static/images/default-profile.jpg" alt="profilcpic">
+         </div> 
+
+        <div class="site-name">
+            <h1>Omigra Recruitment Enterprise</h1>
+        </div>
+        <!-- Dropdown Menu -->
+            <div class="dropdown-container">
+                <button class="dropdown-btn">Menu</button>
+                <div class="dropdown-content">
+                    <a href="profile.html">Profile</a>
+                    <a href="home.html">Home</a>
+                    <a href="about.html">About Us</a>
+                    <a href="contact.html">Contact Us</a>
+                    <a href="#logout">Logout</a>
+                </div>
+            </div>
+    </header>
+
+    <main>
+        <div class="settings-container">
+            <h2>User Settings</h2>
+
+            <form id="settings-form" action="/update_information", method="POST", enctype="multipart/form-data">
+                <div class="form-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username" placeholder="Enter your username" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="text" id="phone" name="phone" placeholder="Enter your phone number">
+                </div>
+
+                <div class="form-group">
+                    <label for="profile-pic">Profile Picture</label>
+                    <input type="file" id="profile-pic" name="profile-pic" accept="image/*">
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Change Password</label>
+                    <input type="password" id="password" name="password" placeholder="Enter new password">
+                </div>
+
+                <div class="form-group">
+                    <label for="confirm-password">Confirm New Password</label>
+                    <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm new password">
+                </div>
+
+                <button type="submit">Update Information</button>
+            </form>
+        </div>
+    </main>
+
+    <script src="../static/scripts/profile.js"></script>
+</body>
+</html>

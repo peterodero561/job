@@ -1,0 +1,302 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    position: relative;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 20px;
+    flex: 1;
+}
+
+/* css for job form */
+.job-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.job-form input[type="text"],
+.job-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.job-form textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.job-form button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.job-form button:hover {
+    background-color: #0056b3;
+}
+
+/* css for jobs */
+
+#jobs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.job {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin: 10px;
+    padding: 15px;
+    width: 30%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.job h2 {
+    margin-top: 0;
+}
+
+.job button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.job button:hover {
+    background-color: #0056b3;
+}
+
+#about, #contact {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin: 10px;
+    padding: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    /* position: fixed; */
+    width: 100%;
+    width: 100%;
+}
+
+
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+/* .user-info {
+    display: flex;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    justify-content: flex-start;
+    background-color: #ddd;
+    margin-left: 30px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+    display: block;
+} */
+
+.user-info {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center the image within the div */
+    width: 80px;
+    height: 80px;
+    background-color: #ddd;
+    margin-left: 30px;
+    border-radius: 50%; /* Make the div circular */
+    overflow: hidden; /* Ensure the image doesn't overflow the div */
+}
+
+.user-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure the image covers the div while maintaining aspect ratio */
+    object-position: center; /* Center the image within the div */
+    border-radius: 50%; /* Match the border-radius to the parent div to ensure it's circular */
+}
+
+
+.heading {
+    width: 80%;  /* 80% width for heading */
+    text-align: center;
+}
+
+.logout {
+    width: 5%;  /* 10% width for logout */
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* Job buttons Styling */
+.jobButtons{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+Dropdown styling
+.dropdown-container {
+    position: relative;
+}
+
+.dropdown-btn {
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover effect for the button */
+.dropdown-btn:hover {
+    background-color: #2980b9;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 10px;
+    min-width: 160px;
+    z-index: 1;
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* Show the dropdown content on hover */
+.dropdown-container:hover .dropdown-content {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Dropdown links styling */
+.dropdown-content a {
+    color: black;
+    padding: 8px 12px;
+    text-decoration: none;
+    display: block;
+    border-radius: 3px;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover effect for dropdown links */
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+/* css styling for add button for admin */
+
+.add-job-container {
+    position: absolute;
+    top: 120px; /* Adjust this value to move the button down as needed */
+    right: 20px; /* Position it 20px from the right */
+    margin-bottom: 10px;
+}
+
+.add-job-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.add-job-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Add margin to the top of the section to prevent overlap */
+main section#jobs {
+    margin-top: 40px; /* Add margin to create space between the button and the section */
+}
